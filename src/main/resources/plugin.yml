@@ -1,0 +1,9 @@
+name: testing-package
+version: '1.0-SNAPSHOT'
+main: art.gatoartstudio.testingPackage.TestingPackage
+api-version: '1.21'
+prefix: SynchronizedInstances
+load: STARTUP
+authors: [ GatoArtStudio ]
+description: This plugin enables data synchronization between Minecraft instances, specifically player-related data
+website: https://gatoartstudio.art/
