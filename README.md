@@ -20,13 +20,18 @@ Localizaciones típicas de `settings.xml`:
 Ejemplo de entrada dentro de `<servers>` (reemplaza placeholders):
 
 ```xml
-<servers>
-    <server>
-        <id>github</id> <!-- Este id debe coincidir con el <id> del repository en el pom.xml -->
-        <username>GatoArtStudio</username> <!-- tu usuario de GitHub o el owner del repo -->
-        <password>YOUR_PERSONAL_ACCESS_TOKEN</password> <!-- pega aquí tu PAT (no lo subas a VCS) -->
-    </server>
-</servers>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>github</id> <!-- Este id debe coincidir con el <id> del repository en el pom.xml -->
+            <username>GatoArtStudio</username> <!-- tu usuario de GitHub o el owner del repo -->
+            <password>YOUR_PERSONAL_ACCESS_TOKEN</password> <!-- pega aquí tu PAT (no lo subas a VCS) -->
+        </server>
+    </servers>
+</settings>
 ```
 
 Notas de seguridad
