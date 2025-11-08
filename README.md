@@ -97,6 +97,10 @@ Ejemplo:
 - Desde la raíz de tu proyecto, ejecuta (si usas un `settings.xml` personalizado, pásalo con `-s`):
 
 ```powershell
+mvn -U clean package
+```
+o
+```powershell
 mvn -s %USERPROFILE%\.m2\settings.xml dependency:resolve
 ```
 
